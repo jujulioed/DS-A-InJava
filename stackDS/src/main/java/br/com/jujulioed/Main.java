@@ -1,5 +1,7 @@
 package br.com.jujulioed;
 
+import br.com.jujulioed.exercises.InvertAString;
+
 import java.util.Stack;
 
 public class Main {
@@ -50,6 +52,10 @@ public class Main {
         // 3. backtracking algorithms (maze, file directories);
         // 4. calling functions (call stack);
 
+
+        System.out.println("Exercise 1 ----------------");
+        System.out.println("Invert a String");
+        new InvertAString();
 
     }
 }
