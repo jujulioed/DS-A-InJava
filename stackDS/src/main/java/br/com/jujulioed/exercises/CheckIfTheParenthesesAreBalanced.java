@@ -9,7 +9,6 @@ public class CheckIfTheParenthesesAreBalanced {
 
         System.out.println("In: " + mathExpression);
         System.out.println("Out: " + isValid);
-
     }
 
 

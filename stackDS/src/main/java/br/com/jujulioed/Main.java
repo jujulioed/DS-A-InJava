@@ -2,6 +2,7 @@ package br.com.jujulioed;
 
 import br.com.jujulioed.exercises.CheckIfTheParenthesesAreBalanced;
 import br.com.jujulioed.exercises.InvertAString;
+import br.com.jujulioed.exercises.exercise3.Implementation;
 
 import java.util.Stack;
 
@@ -61,6 +62,10 @@ public class Main {
         System.out.println("Exercise 2 ----------------");
         System.out.println("Check if the parentheses are balanced");
         new CheckIfTheParenthesesAreBalanced();
+
+        System.out.println("Exercise 3 ----------------");
+        System.out.println("Implement your own Stack with Array");
+        new Implementation();
 
     }
 }
