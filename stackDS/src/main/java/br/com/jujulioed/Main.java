@@ -1,5 +1,6 @@
 package br.com.jujulioed;
 
+import br.com.jujulioed.exercises.CheckIfTheParenthesesAreBalanced;
 import br.com.jujulioed.exercises.InvertAString;
 
 import java.util.Stack;
@@ -56,6 +57,10 @@ public class Main {
         System.out.println("Exercise 1 ----------------");
         System.out.println("Invert a String");
         new InvertAString();
+
+        System.out.println("Exercise 2 ----------------");
+        System.out.println("Check if the parentheses are balanced");
+        new CheckIfTheParenthesesAreBalanced();
 
     }
 }
