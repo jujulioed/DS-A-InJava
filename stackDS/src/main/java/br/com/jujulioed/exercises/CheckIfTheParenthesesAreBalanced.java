@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class CheckIfTheParenthesesAreBalanced {
     public CheckIfTheParenthesesAreBalanced() {
-        String mathExpression = ")((3+3)*(4+5)";
+        String mathExpression = "(3+3)*(4+5)";
         boolean isValid = Run(mathExpression);
 
         System.out.println("In: " + mathExpression);
@@ -24,6 +24,7 @@ public class CheckIfTheParenthesesAreBalanced {
                 if(myStack.empty()) {
                     return false;
                 }
+                myStack.pop();
             }
         }
 
