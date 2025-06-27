@@ -11,7 +11,7 @@ public class Implementation {
         // isEmpty()
         // isFull() (assume a maximum size)
         // Then, use this stack to store and manipulate integers.
-        MyStack ms = new MyStack();
+        MyStack ms = new MyStack(10);
 
         ms.push(15);
         ms.push(12);

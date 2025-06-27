@@ -2,10 +2,12 @@ package br.com.jujulioed.exercises.exercise3;
 
 public class MyStack {
     private int top = -1;
-    private final int size = 10;
-    private final int[] numbersStack = new int[size];
+    private int capacity;
+    private final int[] numbersStack = new int[capacity];
 
-    public MyStack() {}
+    public MyStack(int capacity) {
+        this.capacity = capacity;
+    }
 
     public void push(int value) {
         if (!this.isFull()) {
@@ -37,6 +39,6 @@ public class MyStack {
     }
 
     public boolean isFull() {
-        return this.top + 1  == size;
+        return this.top + 1  == capacity;
     }
 }
