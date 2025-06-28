@@ -2,6 +2,8 @@ package com.jujulioed;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class MyGuests {
     private int numberOfGuests;
@@ -12,27 +14,25 @@ public class MyGuests {
         this.numberOfGuests = numberOfGuests;
     }
 
-    public void AddGuest(String guestName) {
+    public void addGuest(String guestName) {
         if (myGuests.size() != numberOfGuests) {
             myGuests.add(guestName);
-        } else {
-            throw new RuntimeException();
+            return;
         }
+
+        System.out.println("Could not add more guests since you reached the size limit");
     }
 
     public void removeGuest(String guestName) {
-        for (var guest : myGuests) {
-            if (guest == guestName) {
-                myGuests.remove(guestName);
-                return;
-            }
+        if (!myGuests.remove(guestName)) {
+            System.out.println("Guest doesn't exist or you typed wrong");
         }
-
-        System.out.println("Guest doesn't exist or you typed wrong");
     }
 
     public ArrayList<String> getAllGuests() {
-        return myGuests;
+        ArrayList<String> sortedList = new ArrayList<>(myGuests);
+        sortedList.sort(String::compareToIgnoreCase);
+        return sortedList;
     }
 
     public int guestsListSize() {

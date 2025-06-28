@@ -6,8 +6,8 @@ public class Main {
 
         MyGuests guestsList = new MyGuests(5);
 
-        guestsList.AddGuest("João");
-        guestsList.AddGuest("Leo");
+        guestsList.addGuest("João");
+        guestsList.addGuest("Leo");
         guestsList.removeGuest("João");
 
         System.out.println(guestsList.getAllGuests());
